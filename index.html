@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Contact form</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+<div class="toast hidden">
+  <section>
+    <img src="assets/images/icon-success-check.svg" alt="">
+    <h4>Message Sent!</h4>
+  </section>
+  <p>Thanks for completing the form. We'll be in touch soon!</p>
+</div>
+
+<main>
+  <div class="container">
+    <h1>Contact Us</h1>
+    <!--  -->
+    <form>
+      <section class="name">
+        <!--  -->
+        <div class="form-group">
+          <label for="first-name">First Name<span>*</span></label>
+          <input type="text" aria-required="true" id="first-name">
+          <span class="error hidden">This field is required</span>
+        </div>
+        <!--  -->
+        <div class="form-group">
+          <label for="last-name">Last Name<span>*</span></label>
+          <input type="text" aria-required="true" id="last-name">
+          <span class="error hidden">This field is required</span>
+        </div>
+        <!--  -->
+      </section>
+      <!--  -->
+      <div class="form-group">
+        <label for="Email">Email Address<span>*</span></label>
+        <input type="email" aria-required="true" id="email">
+        <span class="error empty hidden">This field is required</span>
+        <span class="error valid hidden">Please enter a valid email address</span>
+      </div>
+      <!--  -->
+      <div class="form-group radio">
+        <section>
+          <span><label for="query">Query Type<span>*</span></label></span>
+          <!--  -->
+          <div class="rome">
+          <div class="query">
+            <input type="radio" id="option1" name="query-type" aria-required="true">
+            <label for="option1">General Enquiry</label>
+          </div>
+          <!--  -->
+          <div class="query">
+            <input type="radio" id="option2" name="query-type" aria-required="true">
+            <label for="option2">Support Request</label>
+          </div>
+          </div>
+          <!--  -->
+        </section>
+        <span class="error hidden">Please select a query type</span>
+      </div>
+      <!--  -->
+      <div class="form-group">
+        <label for="message">Message<span>*</span></label>
+        <textarea rows="6" aria-required="true" id="message"></textarea>
+        <span class="error hidden">This field is required</span>
+      </div>
+      <!--  -->
+      <div class="form-group check">
+        <section>
+        <input id="consent" type="checkbox" aria-required="true">
+        <label for="consent">I hereby consent to being contacted by the team<span>*</span></label>
+        </section>
+        <span class="error hidden">To submit this form, please consent to being contacted</span>
+      </div>
+      <!--  -->
+      <button type="submit" class="submit">Submit</button>
+    </form>
+    <!--  -->
+  </div>
+</main>
+<footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Ridwan Al Mahmud</a>.
+  </div> 
+</footer>
+</body>
+</html>
